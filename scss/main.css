@@ -5,7 +5,91 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  color: white;
+  font-size: 10px;
   font: inherit;
   vertical-align: baseline;
+}
+
+body {
+  background: #0d192b;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  background: #14253d;
+  border-radius: 1rem;
+  width: 90%;
+  margin: auto;
+  padding: 1.25rem 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.card .card-img-top {
+  width: 90%;
+  margin: 0 auto 1rem;
+}
+
+.card .card-img-top img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card .card-body .card-title,
+.card .card-body .card-text {
+  margin-bottom: 1rem;
+}
+
+.card .card-body .card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card .card-body .card-text,
+.card .card-body .time-left {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: .8;
+}
+
+.card .card-body .nft-price {
+  color: #00fff7;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card .card-body .nft-price::before {
+  content: url("../../images/icon-ethereum.svg");
+  margin-right: .3rem;
+}
+
+.card .separator {
+  margin: 1rem 0;
+  border-bottom: 2px solid #808080;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }

@@ -1,0 +1,84 @@
+body {
+    background: $very-dark-blue-01;
+    width: 100vw;
+    height: 100vh;
+    font-family: $font-family-outfit;
+}
+
+.card {
+    background: $very-dark-blue-02;
+    border-radius: 1rem;
+    width: 90%;
+    margin: auto;
+    padding: 1.25rem 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .card-img-top {
+        width: 90%;
+        margin: 0 auto 1rem;
+
+        img {
+            border-radius: 1rem;
+            width: 100%;
+        }
+    }
+
+    .card-body {
+        .card-title, 
+        .card-text {
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        .card-text,
+        .time-left {
+            font-size: 1rem;
+            font-weight: 300;
+            opacity: .8;
+        }
+
+        .nft-price {
+            color: $cyan;
+            font-size: 1.1rem;
+            font-weight: 600;
+
+            &::before {
+                content: url('../../images/icon-ethereum.svg');
+                margin-right: .3rem;
+            }
+        }
+    }
+
+    .separator {
+        margin: 1rem 0;
+        border-bottom: 2px solid #808080;
+    }
+
+}
+
+// 
+// Utility 
+// 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    
+    &.jc-sb {
+        justify-content: space-between;
+    }
+}
+
+// Margins (1: 10px, 2: 20px,...)
+.mb-1 {
+    margin-bottom: 1rem;
+}
