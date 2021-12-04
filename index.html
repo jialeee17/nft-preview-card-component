@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!--Fonts-->
@@ -17,36 +17,29 @@
 <body>
 
   <div class="card">
-    <div class="card-img-top">
-      <img src="images/image-equilibrium.jpg" alt="">
-    </div>
-    <div class="card-body">
-      <div class="container">
+    <div class="container">
+      <div class="card-img-top">
+        <img src="images/image-equilibrium.jpg" alt="">
+      </div>
+      <div class="card-body">
         <h1 class="card-title">Equilibrium #3429</h1>
-        <p class="card-text">Our Equilibrium collection promotes balance and calm.</p>
+          <p class="card-text">Our Equilibrium collection promotes balance and calm.</p>
 
-        <div class="d-flex jc-sb mb-1">
-          <span class="nft-price">0.041 ETH</span>
-          <span class="time-left">3 days left</span>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="publisher-details">
-          <div class="imgWrapper">
-            <img src="images/image-avatar.png" alt="">
+          <div class="d-flex jc-sb mb-1">
+            <span class="nft-price d-flex">0.041 ETH</span>
+            <span class="time-left d-flex">3 days left</span>
           </div>
-          <h2>Creation of <span class="publisher-details__name">Jules Wyvern</span></h2>
-        </div>
-      </div> <!--End of Container-->
+
+          <div class="separator"></div>
+
+          <div class="publisher-details d-flex jc-fs ai-c">
+            <div class="imgWrapper">
+              <img src="images/image-avatar.png" alt="">
+            </div>
+            <h2>Creation of <span class="publisher-details__name">Jules Wyvern</span></h2>
+          </div>
+      </div>
     </div>
   </div>
-
-  <!-- 
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>

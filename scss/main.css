@@ -5,7 +5,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  color: white;
   font-size: 10px;
   font: inherit;
   vertical-align: baseline;
@@ -21,7 +20,10 @@ body {
 .card {
   background: #14253d;
   border-radius: 1rem;
+  -webkit-box-shadow: #555bff 0px 0px 5px 3px, #1fc11b 0px 0px 5px 6px, #ffd913 0px 0px 5px 9px, #ff9c55 0px 0px 5px 12px, #ff5555 0px 0px 5px 15px;
+          box-shadow: #555bff 0px 0px 5px 3px, #1fc11b 0px 0px 5px 6px, #ffd913 0px 0px 5px 9px, #ff9c55 0px 0px 5px 12px, #ff5555 0px 0px 5px 15px;
   width: 90%;
+  max-width: 375px;
   margin: auto;
   padding: 1.25rem 0;
   position: relative;
@@ -31,7 +33,6 @@ body {
 }
 
 .card .card-img-top {
-  width: 90%;
   margin: 0 auto 1rem;
 }
 
@@ -40,21 +41,26 @@ body {
   width: 100%;
 }
 
+.card .card-body {
+  padding: 0 .5rem;
+}
+
 .card .card-body .card-title,
 .card .card-body .card-text {
   margin-bottom: 1rem;
 }
 
 .card .card-body .card-title {
-  font-size: 1.6rem;
+  color: white;
+  font-size: 1.4 rem;
   font-weight: 600;
 }
 
 .card .card-body .card-text,
 .card .card-body .time-left {
+  color: #8bacda;
   font-size: 1rem;
   font-weight: 300;
-  opacity: .8;
 }
 
 .card .card-body .nft-price {
@@ -66,11 +72,41 @@ body {
 .card .card-body .nft-price::before {
   content: url("../../images/icon-ethereum.svg");
   margin-right: .3rem;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
-.card .separator {
+.card .card-body .time-left::before {
+  content: url("../../images/icon-clock.svg");
+  margin-right: .3rem;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.card .card-body .separator {
   margin: 1rem 0;
   border-bottom: 2px solid #808080;
+}
+
+.card .card-body .publisher-details .imgWrapper {
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.card .card-body .publisher-details .imgWrapper img {
+  width: 100%;
+}
+
+.card .card-body .publisher-details h2 {
+  color: #8bacda;
+  font-weight: 300;
+}
+
+.card .card-body .publisher-details h2 .publisher-details__name {
+  color: white;
 }
 
 .container {
@@ -90,6 +126,19 @@ body {
           justify-content: space-between;
 }
 
+.d-flex.jc-fs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.d-flex.ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
+/*# sourceMappingURL=main.css.map */
