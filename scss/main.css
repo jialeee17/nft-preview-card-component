@@ -70,14 +70,14 @@ body {
 }
 
 .card .card-body .nft-price::before {
-  content: url("../../images/icon-ethereum.svg");
+  content: url("../images/icon-ethereum.svg");
   margin-right: .3rem;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
 
 .card .card-body .time-left::before {
-  content: url("../../images/icon-clock.svg");
+  content: url("../images/icon-clock.svg");
   margin-right: .3rem;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
